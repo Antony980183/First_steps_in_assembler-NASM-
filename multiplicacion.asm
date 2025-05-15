@@ -14,7 +14,6 @@ main:
     add ax, 48
     mov [resultado], ax
 
-
     mov eax, 4
     mov ebx, 1
     mov ecx, resultado
