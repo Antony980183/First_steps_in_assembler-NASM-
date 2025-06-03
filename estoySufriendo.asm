@@ -152,7 +152,7 @@ section .data
             db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
             db 0, 0, 0, 0, -20, 0, 0, 0, 0, -20
             db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-            
+
     ;╭∩╮(-_-)╭∩╮
     gui_tablero db 'Ⅰ','⛚','⛚','Ⅱ','⛚','⛚','⛚','Ⅲ','⛚','⛚'
                 db '⛚','⛚','⛚','⛚','⛚','⁎','⛚','⛚','⛚','⛚'
@@ -400,8 +400,6 @@ cara_cinco:
  fin_animacion_dado:
      ret
 
-
-
 ;empiza lo lindo
 turno_jugador:
 
@@ -413,7 +411,7 @@ turno_jugador:
     mov ecx, [personaje_seleccionado]    ; ecx = índice de jugador actual
 
     ; --- ACTUALIZAR EL REGISTRO DE LOS JUGADORES ---
-    mov ebx, [registro_table + ecx*4]    
+    mov ebx, [registro_table + ecx*4]    ;3333333333333333333333333333333333333333333333333333333333333333333333333333333333333
     add [ebx], eax ; Añade el resultado del dado en la dirección de ebx(tabla de registro)
 
     ; --- AVANZAR DE POSICIÓN ---
